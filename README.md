@@ -13,15 +13,15 @@ Imported from Google Code when that was shutdown. Should still build and run if 
 
 Finny with visualization and presets enabled.
 
-http://lh4.ggpht.com/_Gop86JBIkTc/SwCMWvjN_1I/AAAAAAAAAEc/BtwdYn9VHKg/s400/Screenshot-Finny%20-%20the%20RadioShark2%20Manager-4.png
+![Alt text](/img/image4.png?raw=true "screenshot 1")
 
 Finny without options bar
 
-http://lh5.ggpht.com/_Gop86JBIkTc/SwCMW9cZkwI/AAAAAAAAAEg/f2WC1l7Xv_0/s400/Screenshot-Finny%20-%20the%20RadioShark2%20Manager-5.png
+![Alt text](/img/image5.png?raw=true "screenshot 2")
 
 Visualization Only
 
-http://lh5.ggpht.com/_Gop86JBIkTc/SwCMWw6JXcI/AAAAAAAAAEk/a8cTFQXew1I/s400/Screenshot-Finny%20-%20the%20RadioShark2%20Manager-6.png
+![Alt text](/img/image6.png?raw=true "screenshot 3")
 
 Credit Where It's Due
 
