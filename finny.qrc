@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="finny" >
+    <file>assets/finny_icon.png</file>
+    <file>assets/onebit_44.png</file>
+    <file>assets/onebit_12.png</file>
+    <file>assets/onebit_39.png</file>
+    <file>assets/onebit_34.png</file>
+    <file>assets/onebit_37.png</file>
+    <file>assets/onebit_33.png</file>
+    <file>assets/sound_off.png</file>
+    <file>assets/sound_on.png</file>
+    <file>assets/settings.png</file>
+    <file>assets/radioshark.png</file>
+    <file>assets/left_arrow.png</file>
+    <file>assets/fast_left_arrow.png</file>
+    <file>assets/recording_tape.png</file>
+    <file>assets/record_button.png</file>
+    <file>assets/right_arrow.png</file>
+    <file>assets/fast_right_arrow.png</file>
+    <file>assets/vizualization.png</file>
+  </qresource>
+</RCC>

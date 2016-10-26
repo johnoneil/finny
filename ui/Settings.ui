@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Finny Settings</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../finny.qrc">
+    <normaloff>:/finny/assets/finny_icon.png</normaloff>:/finny/assets/finny_icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="Tabs">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="AboutTab">
+      <attribute name="title">
+       <string>About</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>205</width>
+              <height>191</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../finny.qrc">:/finny/assets/radioshark.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_6" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Finny Version 0.5 Beta
+By John O'Neil
+oneil.code@gmail.com</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Reset">
+               <property name="text">
+                <string>Reset Default Settings</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="StartupSettingsTab">
+      <attribute name="title">
+       <string>Startup</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Startup Frequency Behavior</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>3</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>3</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QRadioButton" name="StartAtLastFrequency">
+            <property name="text">
+             <string>Start Finny at last frequecy listened to.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="StartAtFixedFrequency">
+            <property name="text">
+             <string>Start Finny at frequency:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="StartFrequencyPanel" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QComboBox" name="StartBand">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AM</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>FM</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="StartFreq">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Startup Volume Behavior</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QRadioButton" name="StartAtLastVolume">
+            <property name="text">
+             <string>Start Finny volume at last set value</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="StartAtVolume">
+            <property name="text">
+             <string>Start Finny at volume:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="StartVolumePanel" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QSpinBox" name="FixedVolume">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="RecordingTab">
+      <attribute name="title">
+       <string>Recording</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="title">
+          <string>Path and Filenames</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLineEdit" name="RecordingPath"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="RecordingPathBrowse">
+               <property name="text">
+                <string>Browse</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>MP3 Settings</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QRadioButton" name="AutoGenerateMP3Filenames">
+               <property name="text">
+                <string>Auto generate filenames</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="BrowseMP3Filenames">
+               <property name="text">
+                <string>Browse</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_4" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>File Format</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="MP3Format">
+               <item>
+                <property name="text">
+                 <string>Stereo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Joint-Stereo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Dual Channel</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Mono</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Auto</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Bitrate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="Bitrate">
+               <property name="minimum">
+                <number>8</number>
+               </property>
+               <property name="maximum">
+                <number>320</number>
+               </property>
+               <property name="value">
+                <number>128</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="OptionsTab">
+      <attribute name="title">
+       <string>Options</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="margin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Visualization</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <property name="margin">
+              <number>3</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Use Visualization:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="VisualizationName">
+               <item>
+                <property name="text">
+                 <string>monoscope</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_bumpscope</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_corona</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_infinite</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_jakdaw</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_jess</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_lv_analyzer</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_lv_scope</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>libvisual_oinksie</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>goom</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>goom2k1</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <property name="margin">
+              <number>3</number>
+             </property>
+             <item>
+              <widget class="QRadioButton" name="ximagesink">
+               <property name="text">
+                <string>Higher quality</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="xvimagesink">
+               <property name="text">
+                <string>Lower quality</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>Screensaver</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="DisableScreensaver">
+            <property name="text">
+             <string>Disable screensaver while playing</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="title">
+          <string>Logging</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="Logging">
+            <property name="text">
+             <string>Enable program logging output
+Log file finny.log written in HOME directory.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../finny.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StartAtFixedFrequency</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>StartFrequencyPanel</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StartAtVolume</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>StartVolumePanel</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StartBand</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Dialog</receiver>
+   <slot>OnBandChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RecordingPathBrowse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog</receiver>
+   <slot>OnRecordingPathBrowse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Reset</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog</receiver>
+   <slot>OnResetDefaultSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnBandChange(int)</slot>
+  <slot>OnRecordingPathBrowse()</slot>
+  <slot>OnResetDefaultSettings()</slot>
+ </slots>
+</ui>
